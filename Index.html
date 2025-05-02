@@ -6,18 +6,52 @@
     <title>Archivo UAP - Investigación de Fenómenos Aéreos No Identificados</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             background-color: #000000;
             color: #00FF00;
             margin: 0;
             padding: 0;
+            font-size: 16px;
         }
+
         header {
             background-color: #333;
             color: #00FF00;
             text-align: center;
             padding: 20px;
         }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #00FF00;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #FFFF00;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .highlight {
+            color: yellow;
+        }
+
         footer {
             background-color: #333;
             color: #00FF00;
@@ -27,14 +61,51 @@
             width: 100%;
             bottom: 0;
         }
-        .content {
-            padding: 20px;
-        }
-        .highlight {
-            color: yellow;
-        }
+
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #00FF00;
+        }
+
+        .section p {
+            font-size: 1.1em;
+        }
+
+        .report-form {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .report-form input, .report-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #222;
+            color: #00FF00;
+            border: 1px solid #00FF00;
+            border-radius: 5px;
+        }
+
+        .report-form button {
+            background-color: #00FF00;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .report-form button:hover {
+            background-color: #FFFF00;
         }
     </style>
 </head>
@@ -44,20 +115,66 @@
     <h1>Archivo UAP - Investigación de Fenómenos Aéreos No Identificados</h1>
 </header>
 
-<div class="content">
-    <div class="section">
-        <h2>Sobre el Proyecto</h2>
-        <p>Bienvenidos al <span class="highlight">Archivo UAP</span>, una iniciativa dedicada a la investigación de fenómenos aéreos no identificados (UAPs) en todo el mundo. Este es un espacio donde se recopilan, analizan y presentan casos de avistamientos y encuentros con UAPs.</p>
-    </div>
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#casos">Casos Famosos</a>
+    <a href="#documentos">Documentos</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#reporta">Reporta tu Caso</a>
+    <a href="#sobre-mi">Sobre mí</a>
+</nav>
 
+<div class="content" id="inicio">
     <div class="section">
-        <h2>Envíanos tu Caso</h2>
-        <p>Si has sido testigo de algún fenómeno aéreo inexplicable, ¡queremos escuchar tu historia! Puedes enviarnos tu caso a través del siguiente formulario.</p>
+        <h2>Bienvenidos al Archivo UAP</h2>
+        <p>Este es el portal dedicado a la investigación y recopilación de Fenómenos Aéreos No Identificados (UAPs) en el contexto de 2025. Aquí podrás explorar casos de avistamientos, documentos clasificados, noticias recientes y más. Tu colaboración es clave para continuar con la búsqueda de respuestas.</p>
     </div>
+</div>
 
+<div class="content" id="casos">
+    <div class="section">
+        <h2>Casos Famosos</h2>
+        <p>Revisa los casos más misteriosos y emblemáticos de avistamientos de UAPs que han dejado huella en la historia.</p>
+        <!-- Aquí puedes agregar más detalles de casos famosos -->
+    </div>
+</div>
+
+<div class="content" id="documentos">
+    <div class="section">
+        <h2>Documentos Clasificados</h2>
+        <p>Accede a documentos desclasificados y análisis relacionados con fenómenos aéreos no identificados.</p>
+        <!-- Agrega enlaces o imágenes de documentos aquí -->
+    </div>
+</div>
+
+<div class="content" id="noticias">
     <div class="section">
         <h2>Últimas Noticias</h2>
-        <p>En este espacio compartiremos las últimas investigaciones, descubrimientos y artículos sobre fenómenos UAP.</p>
+        <p>Las investigaciones más recientes y los descubrimientos en el campo de los UAPs.</p>
+        <!-- Noticias recientes sobre OVNIs y fenómenos aéreos -->
+    </div>
+</div>
+
+<div class="content" id="reporta">
+    <div class="section">
+        <h2>Reporta tu Caso</h2>
+        <p>Si has sido testigo de un fenómeno aéreo no identificado, por favor, completa el formulario para enviarnos tu reporte.</p>
+        <div class="report-form">
+            <form action="#">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="descripcion" placeholder="Descripción del avistamiento" rows="4" required></textarea>
+                <button type="submit">Enviar Reporte</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="content" id="sobre-mi">
+    <div class="section">
+        <h2>Sobre mí</h2>
+        <p>Soy una ufóloga independiente con años de investigación en fenómenos aéreos no identificados. Mi misión es esclarecer lo desconocido y compartir lo aprendido a través de este archivo.</p>
+        <!-- Puedes agregar más detalles sobre tu biografía aquí -->
     </div>
 </div>
 
